@@ -5,3 +5,15 @@ test:
     - python -m unittest -v tests.test
   post:
     - echo "--- end test ---"
+deployment:
+  master:
+    branch: master
+    codedeploy:
+      test-app:
+        revision_location:
+          revision_type: S3
+          s3_location:
+            bucket: hkanazawa-test
+            key_pattern: test/test-app-{SHORT_COMMIT}-{BUILD_NUM}
+          region: us-east-1
+
