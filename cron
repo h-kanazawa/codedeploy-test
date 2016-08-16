@@ -1,0 +1,1 @@
+* * * * * root /app/scripts/run.py >> /tmp/cron.log >2&1
