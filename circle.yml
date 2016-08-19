@@ -13,4 +13,4 @@ deployment:
           revision_type: S3
           s3_location:
             bucket: hkanazawa-test
-            key_pattern: test-app-{BRANCH}-{SHORT_COMMIT}
+            key_pattern: test/test-app-{BRANCH}-{SHORT_COMMIT}
