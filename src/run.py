@@ -3,4 +3,4 @@
 
 if __name__ == '__main__':
     with open('/tmp/running.log','w') as f:
-        f.write('＼(^o^)／')
+        f.write('＼(^o^)／\n')
