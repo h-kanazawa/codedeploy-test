@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import datetime
+
 if __name__ == '__main__':
-    with open('/tmp/running.log','w') as f:
-        f.write('＼(^o^)／\n')
+    with open('/tmp/running.log','a') as f:
+        now = datetime.datetime.now().strftime("%Y/%m/%d %H:%M:%S")
+        f.write('＼(^o^)／ {}\n'.format(now))
