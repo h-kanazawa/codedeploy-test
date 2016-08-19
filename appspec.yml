@@ -4,6 +4,8 @@ os: linux
 files:
   - source: /
     destination: /app
+permissions:
+  owner: ec2-user
 hooks:
   AfterInstall:
     - location: scripts/setup.sh
